@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to InterviewAid</title>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <section>
+            <div class="bg"></div>
+            <header>
+                <a href="#" class="logo">InterviewAid</a>
+                <div class="toggle"></div>
+                <ul class="navigation">
+                    <li><a href="ind.html">Home</a></li>
+                    <li><a href="index2.html">About</a></li>
+                    <li><a href="index4.html" class="active">Menu</a></li>
+                    <li><a href="index0.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Make a difference!</h2>
+                    <p>Face a real interview and know your prepration level! We here at interviewAid help students to ret rid of interview fear and perform well in their actuall interview. Get comprehensive feedback on your performance & an interview scorecard underlining your strengths, personalized tips on improving weaker areas & a link to the recording of your interview.</p>
+                    <a href="https://forms.gle/pozJf37sLT6MFhxM7 " target="_blank">Schedule Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="apple.png" class="fruits">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li data-text="Computers" class="active"><img src="apple.png" onclick="imgSlider('apple.png');changeBgColor('#fc4a55')"></li>
+                <li data-text="Education"><img src="mango.png" onclick="imgSlider('mango.png');changeBgColor('#ffcc02')"></li>
+                <li data-text="HR"><img src="watermelon.png"  onclick="imgSlider('watermelon.png');changeBgColor('#ae2bff')"></li>
+                <li data-text="Accounting"><img src="dragonFruits.png"  onclick="imgSlider('dragonFruits.png');changeBgColor('#fb6cb2')"></li>
+                <li data-text="Medical"><img src="pineApple.png"  onclick="imgSlider('pineApple.png');changeBgColor('#92ba3c')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script>
+            
+            let menuToggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function(){
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+
+            // change image on click
+            function imgSlider(anything){
+                document.querySelector('.fruits').src = anything;
+            }
+
+            // change background color
+            function changeBgColor(color){
+                const bg = document.querySelector('.bg');
+                bg.style.background = color;
+            }
+
+            // add active class in selected thmbnails
+            let el = document.querySelectorAll(".thumb li");
+            for (let i = 0; i < el.length; i++){
+                el[i].onclick = function(){
+                    var c = 0;
+                    while (c < el.length){
+                        el[c++].className = 'check';
+                    }
+                    el[i].className = 'check active';
+                }
+            }
+        </script>
+    </body>
+</html>

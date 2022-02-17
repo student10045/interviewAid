@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to InterviewAid</title>
+        <link rel="stylesheet" href="style4 copy.css">
+    </head>
+    <body>
+        <section>
+            <div class="bg"></div>
+            <header>
+                <a class="logo">InterviewAid</a>
+                <div class="toggle"></div>
+                <ul class="navigation">
+                    <li><a href="ind.html">Home</a></li>
+                    <li><a href="index2.html" class="active">About</a></li>
+                    <li><a href="index4.html">Menu</a></li>
+                    <li><a href="index0.html">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Make a difference!</h2>
+                    <p>Face a real interview and know your prepration level! We here at interviewAid help students to ret rid of interview fear and perform well in their actuall interview. Get comprehensive feedback on your performance & an interview scorecard underlining your strengths, personalized tips on improving weaker areas & a link to the recording of your interview.</p>
+                    <a href="https://forms.gle/pozJf37sLT6MFhxM7" target="_blank">Schedule Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="donate.png" class="fruits">
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        
+        <script>
+            let menuToggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function(){
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

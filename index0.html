@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to InterviewAid</title>
+        <link rel="stylesheet" href="style4 copy 2.css">
+    </head>
+    <body>
+        <section>
+            <div class="bg"></div>
+            <header>
+                <a class="logo">InterviewAid</a>
+                <div class="toggle"></div>
+                <ul class="navigation">
+                    <li><a href="ind.html">Home</a></li>
+                    <li><a href="index2.html">About</a></li>
+                    <li><a href="index4.html">Menu</a></li>
+                    <li><a href="index0.html" class="active">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Contact Us!</h2>
+                    <p><b>Contact Number : </b>+91 9876543210</p>
+                    <p><b>Email : </b>interviewaid@email.com</p>
+                    <a href="https://forms.gle/pozJf37sLT6MFhxM7" target="_blank">Schedule Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="donate.png" class="fruits">
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+        <script>
+            let menuToggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function(){
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

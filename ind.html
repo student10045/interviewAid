@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mock Interview Website</title>
+    <link rel="stylesheet" type="text/css" href="sty.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">InterviewAid</a>
+        <ul>
+            <li><a href="ind.html" class="active">Home</a></li>
+            <li><a href="index2.html"">About</a></li>
+            <li><a href=" index4.html">Menu</a></li>
+            <li><a href="index0.html"">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src=" stars.png" id="stars">
+                    <img src="moon.png" id="moon">
+                    <img src="mountains_behind.png" id="m_b">
+                    <h2 id="text">Schedule Now</h2>
+                    <a href="#sec" id="btn">Read More</a>
+                    <img src="mountains_front.png" id="m_f">
+                    </section>
+                    <div class="sec" id="sec">
+                        <h2>Dive Deep!</h2>
+                        <p>Interviews are crucial moments in one's career. Theoretical knowledge of interview questions
+                        isn't enough when you actually face an interview. Too often fear takes over our performance
+                            in job interviews.
+
+                            As the adage goes - practice makes perfect! Mock interviews by InterviewBuddy give you the
+                            platform to prepare, practice and experience firsthand how a real-life job interview feels.
+                            Familiarizing yourself with the interview environment beforehand in a relaxed and
+                            stress-free environment gives you an edge over your peers.
+
+
+                            InterviewBuddy is built on the premise that practice & preparation are crucial to get over
+                            your anxieties when attending an interview.
+
+                            Our mock interviews are conducted by handpicked industry experts with an average experience
+                            of 9+ years in the interviewing game. So you're sure to improve your chances of getting
+                            hired!</p>
+                        </br>
+                        <p><b>REDUCE STRESS & ANXIETY : </b>
+                            Doubts about how to answer tricky interview questions may stress you out & create anxiety.
+                            Get over your nerves with mock interviews.</p>
+                        </br>
+                        <p><b>BOOST CONFIDENCE : </b>
+                            Test drive your answers with experts to improve your skills & experience and boost confidence.</p>
+                        </br>
+                        <p><b>CONSTRUCTIVE FEEDBACK : </b>
+                            Get in-depth analysis of your interview style and tips to help you improve areas where you may have weaknesses.</p>
+                        </br>
+                        <p><b>BEHAVIOURAL INTERVIEW QUESTIONS : </b>
+                            Mastering questions like -'Tell me about a time you failed' show you have the skills & competencies needed for the job.</p>
+                    </div>
+                    <script>
+                        let stars = document.getElementById('stars');
+                        let moon = document.getElementById('moon');
+                        let m_b = document.getElementById('m_b');
+                        let text = document.getElementById('text');
+                        let btn = document.getElementById('btn');
+                        let m_f = document.getElementById('m_f');
+                        let header = document.querySelector('header');
+
+                        window.addEventListener('scroll', function () {
+                            let value = window.scrollY;
+                            stars.style.left = value * 0.25 + 'px';
+                            moon.style.top = value * 1.05 + 'px';
+                            m_b.style.top = value * 0.5 + 'px';
+                            m_b.style.front = value * 0 + 'px';
+                            text.style.marginRight = value * 4 + 'px';
+                            text.style.marginTop = value * 1.5 + 'px';
+                            btn.style.marginTop = value * 1.5 + 'px';
+                            header.style.marginTop = value * 0.5 + 'px';
+                        })
+                    </script>
+</body>
+
+</html>
